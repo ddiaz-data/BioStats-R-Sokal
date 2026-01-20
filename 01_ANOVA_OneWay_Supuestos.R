@@ -50,14 +50,14 @@ p1 <- ggplot(datos, aes(x = Sitio, y = Longitud, fill = Sitio)) +
   theme(legend.position = "none")
 
 print(p1)
-# GUARDAMOS IMAGEN 1 (Para el README)
+# GUARDAMOS IMAGEN 1
 ggsave("EDA_Boxplot.png", plot = p1, width = 8, height = 6)
 
 
 # 4. VERIFICACIÓN DE SUPUESTOS (Capítulo 13 Sokal & Rohlf)
 # --------------------------------------------------------
 
-# A) Inspección Visual (Q-Q Plot) - ¡ESTILO MODERNO!
+# A) Inspección Visual (Q-Q Plot)
 # Si los puntos siguen la línea gris, asumimos normalidad.
 p_qq <- ggqqplot(datos, x = "Longitud", facet.by = "Sitio") +
   labs(title = "Gráfico Q-Q: Verificación Visual de Normalidad",
@@ -65,7 +65,7 @@ p_qq <- ggqqplot(datos, x = "Longitud", facet.by = "Sitio") +
        caption = "Best Practice: Validación visual + Test Estadístico")
 
 print(p_qq)
-# GUARDAMOS IMAGEN 2 (Para el README)
+# GUARDAMOS IMAGEN 2
 ggsave("Normality_QQPlot.png", plot = p_qq, width = 8, height = 6)
 
 
@@ -126,5 +126,5 @@ p2 <- ggplot(resumen, aes(x = Sitio, y = Media, fill = Sitio)) +
   theme(legend.position = "none")
 
 print(p2)
-# GUARDAMOS IMAGEN 3 (Para el README)
+# GUARDAMOS IMAGEN 3
 ggsave("ANOVA_Resultados.png", plot = p2, width = 8, height = 6)
