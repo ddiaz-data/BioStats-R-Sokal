@@ -26,17 +26,18 @@ Todo script debe comenzar obligatoriamente con este bloque:
 # REFERENCIA:
 # Sokal, R. R., & Rohlf, F. J. (2012). Biometry. W. H. Freeman.
 # ==============================================================================
+```
 # 3. Convenciones de Código
-#Estilo: Tidyverse para limpieza, pero R Base permitido para tests clásicos.
+Estilo: Tidyverse para limpieza, pero R Base permitido para tests clásicos.
 
-#Notación: Usar alpha = 0.05 como estándar por defecto.
+Notación: Usar alpha = 0.05 como estándar por defecto.
 
 # 4. Resultados: Siempre interpretar el resultado biológico, no solo el estadístico.
 
-#Filosofía Estadística (El "Sello Dylan")
-#Supuestos Primero: "Sin normalidad no hay paraíso". Siempre graficar residuos.
+Filosofía Estadística (El "Sello Dylan")
+Supuestos Primero: "Sin normalidad no hay paraíso". Siempre graficar residuos.
 
-#Rigor: Preferir modelos lineales (lm) sobre tests de caja negra (t.test) cuando sea posible para entender la mecánica.
+Rigor: Preferir modelos lineales (lm) sobre tests de caja negra (t.test) cuando sea posible para entender la mecánica.
 
-#Claridad: El código debe ser legible para un estudiante de licenciatura.
-```
+Claridad: El código debe ser legible para un estudiante de licenciatura.
+
